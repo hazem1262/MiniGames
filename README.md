@@ -2,6 +2,7 @@
 *****************Welcome To Mini Games*****************
 
 authors:
+
 1-Hazem Ashraf
 
 2-Nouran Samak
@@ -25,8 +26,11 @@ Second Game: [Find The Numbers]
 How to play:
 
 -Find out all the hidden numbers in images before time runs out.
+
 -If you make a mistake the time will decrease by 5 seconds. 
+
 -There are 2 levels in this game.
+
 -You have 2 minutes for each image.
 
 Third Game [Kill Smile Emoji]
