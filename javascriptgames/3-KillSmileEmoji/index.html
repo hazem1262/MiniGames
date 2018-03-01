@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Kill Smile Emoji</title>
+	</head>
+	<style>
+	   #dialogoverlay{
+                    display: none;
+                    opacity: .8;
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    background: #FFF;
+                    width: 100%;
+                    z-index: 10;
+                }
+    #dialogbox{
+		display: none;
+		position: fixed;
+		border-radius: 7px;
+		width: 550px;
+		z-index: 10;
+		border: 2px solid #000;
+            }    
+
+            #dialogbox > div{
+				 background: #FFF;
+   				 margin: 8px;
+   				 height: 150px; 
+				}
+            #dialogbox > div > #dialogboxbody{
+				background: white;
+				padding: 20px;
+				color: MediumSeaGreen;
+				font-size: 40px;
+				text-align: center; 
+				 }
+
+		#myimg{
+		   position:fixed;
+		}
+		*{cursor: url(cur/CrosshairLinkBlue.cur), default;}
+		body{margin:0;padding:0;background-color:#184048;}
+		.parent{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		background-color:#184048;
+		height:500px;
+		width:900px;
+		display:grid;
+        grid-template-columns: 80% 20%;
+	    grid-gap:1em;
+		}
+		.child1{
+		background-color:#073642;
+		padding:1em;
+		}
+		.child2{
+		background-color:#b58900;
+		padding:1em;
+		}
+		button{
+			padding: 10px 20px;
+			background: #0fe667;
+			border: 0;
+			border-radius: 11px;
+			color: #fff;
+			position: absolute;
+			bottom: 15px;
+			left: 41%;
+		}
+	</style>
+	<body>
+	   <div id="dialogoverlay"></div>
+     <div id="dialogbox">
+      <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+      </div>
+     </div>
+		<div class="parent">
+		   <div class="child1">
+			    <img id="myimg" src="images/Slightly_Smiling_Face_Emoji1.png" width="50px" height="50px" onclick="shoot()"/>
+			</div>
+			<div class="child2">
+				<h3 id="score">Score:</h3>
+				<div id="live">
+					<img id="loseLive" src="images/Pink_Heart_With_Ribbon_Emoji.png" width="20px" height="20px" onclick="loseLive()"/>
+					<img id="loseLive" src="images/Pink_Heart_With_Ribbon_Emoji.png" width="20px" height="20px" onclick="loseLive()"/>
+					<img id="loseLive" src="images/Pink_Heart_With_Ribbon_Emoji.png" width="20px" height="20px" onclick="loseLive()"/>
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

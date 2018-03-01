@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Hang Man</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body onload="chooseItem()">
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+        <div id="back">
+            <div id="title"><h1>Hang Man</h1></div>
+
+            <ul id="letters">
+                <li  id="A" onclick="setimage(this)">A</li>
+                <li  id="B" onclick="setimage(this)">B</li>
+                <li  id="C" onclick="setimage(this)">C</li>
+                <li  id="D" onclick="setimage(this)">D</li>
+                <li  id="E" onclick="setimage(this)">E</li>
+                <li  id="F" onclick="setimage(this)">F</li>
+                <li  id="G" onclick="setimage(this)">G</li>
+                <li  id="H" onclick="setimage(this)">H</li>
+                <li  id="I" onclick="setimage(this)">I</li>
+                <li  id="J" onclick="setimage(this)">J</li>
+                <li  id="K" onclick="setimage(this)">K</li>
+                <li  id="L" onclick="setimage(this)">L</li>
+                <li  id="M" onclick="setimage(this)">M</li>
+                <li  id="N" onclick="setimage(this)">N</li>
+                <li  id="O" onclick="setimage(this)">O</li>
+                <li  id="P" onclick="setimage(this)">P</li>
+                <li  id="Q" onclick="setimage(this)">Q</li>
+                <li  id="R" onclick="setimage(this)">R</li>
+                <li  id="S" onclick="setimage(this)">S</li>
+                <li  id="T" onclick="setimage(this)">T</li>
+                <li  id="U" onclick="setimage(this)">U</li>
+                <li  id="V" onclick="setimage(this)">V</li>
+                <li  id="X" onclick="setimage(this)">X</li>
+                <li  id="W" onclick="setimage(this)">W</li>
+                <li  id="Y" onclick="setimage(this)">Y</li>
+                <li  id="Z" onclick="setimage(this)">Z</li>
+            </ul>
+
+            <div id="wrapper">
+
+                <div id="OO"></div>
+                <div id="centcat">
+                    <pre id="selectedname"></pre>
+                    <div id="hint" style="text-align: center;">
+                        <h2 id="hintname" style="text-align: center;">Hint will appear when you have 4 lives left</h2>
+                    </div>
+                    <div id="moves"></div>
+                </div>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    </body>
+
+</html>

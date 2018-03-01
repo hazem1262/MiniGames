@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>
+            .pointer {
+                cursor: pointer;
+            }
+			
+            .noselect {
+                -webkit-touch-callout: none; 
+                -webkit-user-select: none; 
+                -khtml-user-select: none; 
+                -moz-user-select: none; 
+                -ms-user-select: none; 
+                user-select: none; 
+            }
+			
+			.btn {
+				cursor: pointer;
+				color: white;
+				font-size: 24px;
+				width: 200px;
+				height: 50px;
+				background-color: #00dc6e;
+				border: none;
+				background: #00dc6e;
+				border-radius: 4px;
+				position: absolute;
+				left: 670px;
+				top: 500px;
+				font-weight: bold;
+			}
+			
+        </style>
+
+    </head>
+    <body onLoad="hideAll()" style="background-color: black">
+		<div id="topTxt" style="position: absolute; left: 300px ; top: 50px ; color: white; font-size: 24px; font-family: sans-serif">Find The Numbers From 1 to 12 :)</div>
+        <div style="background-color: black" class="noselect" >
+			
+            <img id="img" src="images/img.jpeg" alt="Image" class = pointer style="position: absolute; left: 300px ; top: 100px" height=500  width=900 onclick="wrong()">
+            <img id="1" src="images/1.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 620px ; top: 470px " height=50  width=50 onclick="hide(this, this.id)">
+            <img id="2" src="images/2.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 800px ; top: 500px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="3" src="images/3.png" alt="Image" class = pointer style="position: absolute ; opacity:0.50; left: 700px ; top: 200px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="4" src="images/4.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 900px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="5" src="images/5.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 385px ; top: 300px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="6" src="images/6.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 400px ; top: 150px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="7" src="images/7.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 500px ; top: 500px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="8" src="images/8.png" alt="Image" class = pointer style="position: absolute; opacity:0.50; left: 700px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="9" src="images/9.png" alt="Image" class = pointer style="position: absolute; opacity:0.50; left: 930px ; top: 250px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="10" src="images/10.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 1000px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="11" src="images/11.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 370px ; top: 480px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="12" src="images/12.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 1080px ; top: 300px " height=40  width=40 onclick="hide(this, this.id)">
+			
+			<img id="img2" src="images/img2.jpeg" alt="Image" class = pointer style="position: absolute; left: 300px ; top: 100px" height=500  width=900 onclick="wrong()">
+            <img id="3 " src="images/3.png" alt="Image" class = pointer style="position: absolute; opacity:0.8; left: 610px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="1 " src="images/1.png" alt="Image" class = pointer style="position: absolute; opacity:0.8; left: 800px ; top: 290px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="2 " src="images/2.png" alt="Image" class = pointer style="position: absolute ; opacity:0.4; left: 700px ; top: 260px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="6 " src="images/6.png" alt="Image" class = pointer style="position: absolute; opacity:0.8; left: 900px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="4 " src="images/4.png" alt="Image" class = pointer style="position: absolute; opacity:0.7; left: 385px ; top: 300px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="5 " src="images/5.png" alt="Image" class = pointer style="position: absolute; opacity:0.4; left: 400px ; top: 150px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="9 " src="images/9.png" alt="Image" class = pointer style="position: absolute; opacity:0.8; left: 520px ; top: 480px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="7 " src="images/7.png" alt="Image" class = pointer style="position: absolute; opacity:0.7; left: 700px ; top: 410px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="8 " src="images/8.png" alt="Image" class = pointer style="position: absolute; opacity:0.5; left: 930px ; top: 270px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="12 " src="images/12.png" alt="Image" class = pointer style="position: absolute; opacity:0.7; left: 1000px ; top: 400px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="10 " src="images/10.png" alt="Image" class = pointer style="position: absolute; opacity:1; left: 390px ; top: 480px " height=40  width=40 onclick="hide(this, this.id)">
+            <img id="11 " src="images/11.png" alt="Image" class = pointer style="position: absolute; opacity:0.7; left: 480px ; top: 270px " height=40  width=40 onclick="hide(this, this.id)">
+			
+			
+			
+			<img id="Won" src="images/YouWin.png" alt="Image" class = pointer style="position: absolute; left: 300px ; right: 150px ; top: 100px ; visibility: hidden" height=500  width=900>
+			<img id="GameOver" src="images/gameover.jpg" alt="Image" class = pointer style="position: absolute; left: 300px ; right: 150px ; top: 100px ; visibility: hidden" height=500  width=900>
+            <div></div>
+			<div id="decrement" style=" opacity: 0.70; position: absolute; visibility: hidden; color: white ; left: 1240px ; font-size:40px ; top: 55px">-5s</div>
+            <div> <span id="timer" style="font-family: sans-serif;  border : 2px solid white ; text-align: center ; color: white ; position: absolute; left: 1230px ; top: 100px ; font-size:26px;padding:8px 14px 8px 14px;"></span></div>
+            <div id="p" style="position: absolute; text-align : center; left: 1250px ; top: 150px ; font-size:26px ; color:white"></div>
+			<button id="play" onclick="next()" style="visibility: hidden" class= btn >Next Level</button>
+			<button id="startAgain" onclick="startAgain()" style="visibility: hidden" class= btn >Start Again</button>
+			<button id="try" onclick="playAgain()" style="visibility: hidden" class= btn >Try Again</button>
+        </div>
+		<img id="imgStart" src="images/startgame2.PNG" alt="Image" class = pointer style="position: absolute; left: 300px ; top: 100px" height=500  width=900>
+		<button id="start" onclick="play()" style="top: 370px; left: 660px; opacity: 0.90; background-color: #186e83" class= btn >Start Game</button>
+    </body>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</html>     

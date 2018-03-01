@@ -1,0 +1,93 @@
+.right{
+    display: inline;
+    width: 20%;
+    margin-top: 2%;
+    
+}
+
+.wrong{
+    display: inline;
+    width: 20%;
+    margin-top: 2%;
+}
+img{
+    width: 100px;
+    height: 250px;
+    position: absolute;
+}
+.card{
+    top: 250px;
+    left: 400px;
+}
+.one{
+    top: 250px;
+    left: 600px;
+}
+.two{
+    top: 250px;
+    left: 800px;
+}
+
+/*.win{
+    position: absolute;
+    right: 200px;
+    top: 100
+}
+.lose{
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+#wincount{
+    position: absolute;
+    right: 200px;
+    top: 130
+}
+#losecount{
+    position: absolute;
+    right: 100px;
+    top: 130
+}*/
+h1 {
+    text-align: center;
+    color:MediumSeaGreen
+}
+
+.btn {
+
+        background-color: MediumSeaGreen;
+        color: white;
+        border-radius: 10%;
+        border :none;
+        padding: .75%;
+    }   
+
+.level 
+{
+    text-align: center;
+}
+#levels{
+    color:MediumSeaGreen;
+    padding: .65%;
+}
+body {
+    display: flex;
+}
+
+     .leftt {
+        color:MediumSeaGreen;
+        width : 24%;
+        text-align: center;
+        font-size: 200%;
+    } 
+
+    .centerr {
+        width : 50%;
+    } 
+
+    .rightt {
+        color:MediumSeaGreen;
+        width : 24%;
+        text-align: center;
+        font-size: 200%;
+    } 

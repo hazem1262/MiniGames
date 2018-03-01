@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="leftt">    
+            <p class="win"> Win </p>
+            <p id="wincount"></p>
+        </div>
+        <div class="centerr">
+            <h1>Find The Girl</h1>
+            <div class="right">
+                <img id="queen" class="card" src="images/queen.jpg" onclick="check(this)">
+            </div>
+            <div class="wrong">
+                <img src="images/one.png" class="one" onclick="check1(this)">
+            </div>
+            <div class="wrong">
+                <img src="images/two.png" class="two" onclick="check2(this)">
+            </div>
+            <div class="level">
+                <button class = "btn" onclick="startGame()">start</button>
+                <select id="levels">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="15">ultimate</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="rightt">
+            <p class="lose"> Lose </p>
+            <p id="losecount"></p>
+        </div>
+       
+        <script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>XO game</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body >
+
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+
+        <div class="mainn">
+            <div class="leftt">
+                <h2 style="color: MediumSeaGreen; text-align: center" >Player X</h2>
+                <h2 style="color: MediumSeaGreen; text-align: center" id="XScore"></h2>
+            </div>
+
+
+            <div div class="centerr">
+                <h2 style="color: MediumSeaGreen; text-align: center" id="Turn">It's turn for Player X</h2>
+            <table border="3">
+                <tr width="200" height="150">
+                    <td id="1" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="2" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="3" width="200" height="150" onclick="setimage(this)"></td>
+                </tr>
+                <tr width="200" height="150">
+                    <td id="4" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="5" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="6" width="200" height="150" onclick="setimage(this)"></td>
+                </tr>
+                <tr width="200" height="150">
+                    <td id="7" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="8" width="200" height="150" onclick="setimage(this)"></td>
+                    <td id="9" width="200" height="150" onclick="setimage(this)"></td>
+                </tr>
+            </table>
+            <h2 style="color: MediumSeaGreen; text-align: center" id="Tie"></h2>
+            </div>
+            <div div class="rightt">
+                        <h2 style="color: MediumSeaGreen; text-align: center" >Player O</h2>
+                        <h2 style="color: MediumSeaGreen; text-align: center" id="OScore"></h2>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+
+</html>
