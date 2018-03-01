@@ -2,9 +2,12 @@
 *****************Welcome To Mini Games*****************
 
 authors:
-1-Hazem Ashraf 
+1-Hazem Ashraf
+
 2-Nouran Samak
+
 3-Eslam Waheed
+
 4-Mohammed El-shawarby
 
 
