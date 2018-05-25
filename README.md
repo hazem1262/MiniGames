@@ -3,13 +3,13 @@
 
 authors:
 
-1-Hazem Ashraf
+1- Hazem Ashraf
 
-2-Nouran Samak
+2- Nouran Samak
 
-3-Eslam Waheed
+3- Eslam Waheed
 
-4-Mohammed El-shawarby
+4- Mohammed El-shawarby
 
 
 How to play:
